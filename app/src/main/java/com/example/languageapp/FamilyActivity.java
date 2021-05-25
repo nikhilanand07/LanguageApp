@@ -20,16 +20,16 @@ public class FamilyActivity extends AppCompatActivity {
         ArrayList<Word> family = new ArrayList<>();
 
         //adding the family into the arrayList
-        family.add(new Word("Father", "Padre"));
-        family.add(new Word("Mother", "mamá"));
-        family.add(new Word("Son", "hijo"));
-        family.add(new Word("Daughter", "hija"));
-        family.add(new Word("Older Brother", "Hermano mayor"));
-        family.add(new Word("Younger Brother", "hermano más joven"));
-        family.add(new Word("Older Sister", "hermana mayor"));
-        family.add(new Word("Younger Sister", "hermana menor"));
-        family.add(new Word("Grandmother", "abuela"));
-        family.add(new Word("GrandFather", "abuelo"));
+        family.add(new Word("Father", "Padre",R.drawable.family_father));
+        family.add(new Word("Mother", "mamá", R.drawable.family_mother));
+        family.add(new Word("Son", "hijo", R.drawable.family_son));
+        family.add(new Word("Daughter", "hija", R.drawable.family_daughter));
+        family.add(new Word("Older Brother", "Hermano mayor", R.drawable.family_older_brother));
+        family.add(new Word("Younger Brother", "hermano más joven", R.drawable.family_younger_brother));
+        family.add(new Word("Older Sister", "hermana mayor", R.drawable.family_older_sister));
+        family.add(new Word("Younger Sister", "hermana menor", R.drawable.family_younger_sister));
+        family.add(new Word("Grandmother", "abuela", R.drawable.family_grandmother));
+        family.add(new Word("GrandFather", "abuelo", R.drawable.family_grandfather));
 
 
 

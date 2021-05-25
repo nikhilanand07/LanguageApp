@@ -7,10 +7,19 @@ public class Word {
 
     private String mDefaultTranslation;
     private String mMiwokTranslation;
+    private int mimageResourceId;
 
+    //first constructor
     public Word(String mDefaultTranslation, String mMiwokTranslation){
         this.mDefaultTranslation = mDefaultTranslation;
         this.mMiwokTranslation = mMiwokTranslation;
+    }
+
+    //second constructor
+    public Word(String mDefaultTranslation, String mMiwokTranslation, int mimageResourceId){
+        this.mDefaultTranslation = mDefaultTranslation;
+        this.mMiwokTranslation = mMiwokTranslation;
+        this.mimageResourceId = mimageResourceId;
     }
 
     public String getmDefaultTranslation() {
@@ -20,4 +29,6 @@ public class Word {
     public String getmMiwokTranslation() {
         return mMiwokTranslation;
     }
+
+    public int getImageResourceId(){ return mimageResourceId; }
 }
