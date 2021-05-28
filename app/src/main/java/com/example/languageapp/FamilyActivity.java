@@ -48,7 +48,7 @@ public class FamilyActivity extends AppCompatActivity {
          * Using the array adapter and list view to show our list of items
          */
 
-        WordAdapter itemsAdapter = new WordAdapter(this, family);
+        WordAdapter itemsAdapter = new WordAdapter(this, family, R.color.category_family);
 
         ListView listView = (ListView) findViewById(R.id.listView);
 

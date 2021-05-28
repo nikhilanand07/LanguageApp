@@ -48,7 +48,7 @@ public class PhrasesActivity extends AppCompatActivity {
          * Using the array adapter and list view to show our list of items
          */
 
-        WordAdapter itemsAdapter = new WordAdapter(this, phrases);
+        WordAdapter itemsAdapter = new WordAdapter(this, phrases, R.color.category_phrases);
 
         ListView listView = (ListView) findViewById(R.id.listView);
 

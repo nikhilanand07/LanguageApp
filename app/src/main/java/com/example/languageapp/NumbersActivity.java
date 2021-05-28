@@ -46,7 +46,7 @@ public class NumbersActivity extends AppCompatActivity {
     * Using the array adapter and list view to show our list of items
      */
 
-        WordAdapter itemsAdapter = new WordAdapter(this, words);
+        WordAdapter itemsAdapter = new WordAdapter(this, words, R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.listView);
 

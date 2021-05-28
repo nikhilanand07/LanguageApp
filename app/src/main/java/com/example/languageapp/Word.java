@@ -7,7 +7,8 @@ public class Word {
 
     private String mDefaultTranslation;
     private String mMiwokTranslation;
-    private int mimageResourceId;
+    private int mimageResourceId = NO_IMAGE_PROVIDED;
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     //first constructor
     public Word(String mDefaultTranslation, String mMiwokTranslation){
@@ -15,7 +16,7 @@ public class Word {
         this.mMiwokTranslation = mMiwokTranslation;
     }
 
-    //second constructor
+    //second constructor : it takes an extra argumet imageResourceId
     public Word(String mDefaultTranslation, String mMiwokTranslation, int mimageResourceId){
         this.mDefaultTranslation = mDefaultTranslation;
         this.mMiwokTranslation = mMiwokTranslation;
@@ -31,4 +32,8 @@ public class Word {
     }
 
     public int getImageResourceId(){ return mimageResourceId; }
+
+    public boolean hasImage(){
+        return mimageResourceId != NO_IMAGE_PROVIDED;
+    }
 }
